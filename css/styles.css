@@ -31,6 +31,7 @@
   --third-font-size: 26px;
   --primary-font-weight: 700;
   --secondary-font-weight: 500;
+  --third-font-weight: 400;
   --primary-line-height: 1.14;
   --secondary-line-height: 1.19;
   --primary-letter-spacing: 0.03em;
@@ -299,20 +300,19 @@ address {
   align-items: baseline;
 }
 
-.footer-form-field{
+.footer-mailing-form {
   display: flex;
   align-items: center;
 }
 
 .footer-form-title {
-  font-family: 'Roboto';
+  font-family: var(--primary-font);
   font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
+  font-weight: var(--primary-font-weight);
+  line-height: var(--primary-line-height);
+  letter-spacing: var(--primary-letter-spacing);
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: var(--bg-color1);
   margin-bottom: 20px;
 }
 
@@ -327,24 +327,24 @@ address {
   padding-left: 16px;
   font-family: 'Roboto';
   font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
+  font-weight: var(--third-font-weight);
+  font-size: var(--secondary-font-size);
+  line-height: 1.25;
   display: flex;
   align-items: center;
-  letter-spacing: 0.03em;
-  color: #FFFFFF;
+  letter-spacing: var(--primary-letter-spacing);
+  color: var(--bg-color1);
 }
 
   .footer-form-field-inpt::placeholder {
-  font-family: 'Roboto';
+  font-family: var(--primary-font);
 font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 20px;
+font-weight: var(--third-font-weight);
+font-size: var(--secondary-font-size);
+line-height: 1.25;
 display: flex;
 align-items: center;
-letter-spacing: 0.03em;
+letter-spacing: var(--primary-letter-spacing);
 color: rgba(255, 255, 255, 0.6);
 }
 
@@ -352,19 +352,19 @@ color: rgba(255, 255, 255, 0.6);
   width: 200px;
   height: 50px;
   padding: 10px 28px;
-  background-color: #2196F3;
+  background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  font-family: 'Roboto';
+  font-family: var(--primary-font);
   font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 30px;
+  font-weight: var(--primary-font-weight);
+  font-size: var(--secondary-font-size);
+  line-height: 1.88;
   display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #FFFFFF;
+  color: var(--bg-color1);
 }
 
 .footer-form-field-btn-icon {
@@ -373,7 +373,7 @@ color: rgba(255, 255, 255, 0.6);
 
 
 .footer-form-field-inpt:focus {
-  border-color: #2196F3;
+  border-color: var(--accent-color);
   outline: none;
   transition: color 250ms var(--primary-timing-function);
 } 
@@ -622,7 +622,7 @@ color: rgba(255, 255, 255, 0.6);
   background-color: var(--accent-color);
   font-family: var(--primary-font);
   font-style: normal;
-  font-weight: 400;
+  font-weight: var(--third-font-weight);
   font-size: 18px;
   line-height: 1.55;
   letter-spacing: var(--primary-letter-spacing);
@@ -765,20 +765,20 @@ color: rgba(255, 255, 255, 0.6);
 }
 
 .modal-form-title {
-  font-family: 'Roboto';
+  font-family: var(--primary-font);
 font-style: normal;
 font-weight: 700;
 font-size: 20px;
 line-height: 23px;
 text-align: center;
-letter-spacing: 0.03em;
+letter-spacing: var(--primary-letter-spacing);
 color: #212121;
 margin-bottom: 12px;
 }
 
 .modal-form-field {
   margin-bottom: 10px;
-  background: #FFFFFF;
+  background: var(--bg-color1);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   
@@ -786,7 +786,7 @@ margin-bottom: 12px;
 
 .modal-form-field-message{
   margin-bottom: 20px;
-  background: #FFFFFF;
+  background: var(--bg-color1);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
@@ -805,13 +805,13 @@ margin-bottom: 12px;
 }
 
 .modal-form-input:focus, .modal-field-message:focus {
-  border-color: #2196F3;
+  border-color: var(--accent-color);
   outline: none;
   transition: color 250ms var(--primary-timing-function);
 } 
 
 .modal-form-input:focus + .modal-form-icon {
-  fill: #2196F3;
+  fill: var(--accent-color);
   transition: color 250ms var(--primary-timing-function);
 } 
 
@@ -825,9 +825,9 @@ margin-bottom: 12px;
 } 
 
 .modal-field-message::placeholder {
-  font-family: 'Roboto';
+  font-family: var(--primary-font);
 font-style: normal;
-font-weight: 400;
+font-weight: var(--third-font-weight);
 font-size: 12px;
 line-height: 14px;
 letter-spacing: 0.01em;
@@ -836,24 +836,23 @@ color: rgba(117, 117, 117, 0.5);
 
 .modal-form-field-name {
   display: block;
-  font-family: 'Roboto';
+  font-family: var(--primary-font);
   font-style: normal;
-  font-weight: 400;
+  font-weight: var(--third-font-weight);
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
-  color: #757575;
+  color: var(--paragraf-text-color);
   margin-bottom: 4px;
 }
 
 .modal-form-check-field {
-  font-family: 'Roboto';
+  font-family: var(--primary-font);
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  color: #757575;
+  font-weight: var(--third-font-weight);
+  line-height: 1.71;
+  letter-spacing: var(--primary-letter-spacing);
+  color: var(--paragraf-text-color);
   margin-bottom: 30px;
   padding-left: 14px;
   display: flex;
@@ -862,26 +861,26 @@ color: rgba(117, 117, 117, 0.5);
 
 .modal-form-contract-link {
   text-decoration: underline;
-  color: #2196F3;
+  color: var(--accent-color);
 }
 
 .modal-window-submit-btn {
-  background-color: #2196F3;
+  background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border-color: transparent;
   padding: 10px 52px;
   margin: 0 auto 40px;
-  font-family: 'Roboto';
+  font-family: var(--primary-font);
   font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 30px;
+  font-weight: var(--primary-font-weight);
+  font-size: var(--secondary-font-size);
+  line-height: 1.88;
   display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #FFFFFF;
+  color: var(--bg-color1);
 }
 
 .modal-form-icon {
@@ -905,17 +904,17 @@ transform: translateY(-50%);
 }
 
 .modal-form-check:checked + .modal-check-box-sign {
-  background-color: #2196F3;
+  background-color: var(--accent-color);
   border-color: transparent;
 }
 
 .modal-form-check:checked + .modal-check-box-sign .modal-form-check-content {
   display: block;
-  fill: #FFFFFF;
+  fill: var(--bg-color1);
 }
 
 .modal-form-check:focus + .modal-check-box-sign {
-  border: 1px solid #2196F3;
+  border: 1px solid var(--accent-color);
   transition: color 250ms var(--primary-timing-function);
 }
 
