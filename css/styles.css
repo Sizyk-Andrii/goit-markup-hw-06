@@ -884,6 +884,7 @@ address {
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--bg-color1);
+  cursor: pointer;
 }
 
 .modal-form-icon {
