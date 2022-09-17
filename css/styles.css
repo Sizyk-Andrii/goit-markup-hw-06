@@ -260,7 +260,7 @@ address {
 .footer-invite-block {
   display: block;
   align-content: center;
-  margin-right: 93px;
+  margin-right: auto;
 }
 
 .footer-invite {
@@ -355,6 +355,7 @@ address {
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: none;
   font-family: var(--primary-font);
   font-style: normal;
   font-weight: var(--primary-font-weight);
@@ -737,6 +738,7 @@ address {
   transition: transform 250ms var(--primary-timing-function),
     opacity 250ms var(--primary-timing-function);
   animation: size-in 10000ms linear;
+  padding: 40px;
 }
 
 .modal-window-close-btn {
@@ -752,6 +754,12 @@ address {
   padding: 0;
   background-color: var(--bg-color1);
   border: 1px solid var(--button-text-shadow-primary-color);
+  cursor: pointer;
+}
+
+.modal-window-close-btn:hover {
+  fill: var(--accent-color);
+  transition: color 250ms var(--primary-timing-function);
 }
 
 /* ========Modal form ========= */
@@ -759,7 +767,6 @@ address {
 .modal-form {
   display: flex;
   flex-direction: column;
-  padding: 40px;
 }
 
 .modal-form-title {
@@ -777,16 +784,12 @@ address {
 .modal-form-field {
   margin-bottom: 10px;
   background: var(--bg-color1);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
 
 .modal-form-field-message {
   margin-bottom: 20px;
   background: var(--bg-color1);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
 
